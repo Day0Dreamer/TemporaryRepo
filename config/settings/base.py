@@ -68,10 +68,12 @@ THIRD_PARTY_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "ckeditor"
 ]
 
 LOCAL_APPS = [
     "digitale_esa.users.apps.UsersConfig",
+    "esa_poll",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
