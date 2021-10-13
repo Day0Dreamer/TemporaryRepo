@@ -32,8 +32,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=128, verbose_name='Text')),
-                ('question_list', models.ManyToManyField(blank=True, default=None, to='esa_poll.Question')),
-                ('topic_group', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.PROTECT, to='esa_poll.topicgroup')),
+                ('question_list', models.ManyToManyField(blank=True, default=None, to='isa_poll.Question')),
+                ('topic_group', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.PROTECT, to='isa_poll.topicgroup')),
             ],
         ),
         migrations.CreateModel(
@@ -43,7 +43,7 @@ class Migration(migrations.Migration):
                 ('plain_text', models.CharField(blank=True, max_length=2048, null=True, verbose_name='Text')),
                 ('rich_text', ckeditor.fields.RichTextField(blank=True, null=True)),
                 ('media_file', models.FileField(blank=True, null=True, upload_to='')),
-                ('question', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='esa_poll.question')),
+                ('question', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='isa_poll.question')),
             ],
         ),
     ]

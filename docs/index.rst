@@ -1,9 +1,9 @@
-.. Digitale ESA documentation master file, created by
+.. Digital ISA documentation master file, created by
    sphinx-quickstart.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Digitale ESA's documentation!
+Welcome to Digital ISA's documentation!
 ======================================================================
 
 .. toctree::

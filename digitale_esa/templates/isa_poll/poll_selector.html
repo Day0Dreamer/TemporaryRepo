@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+                    <h1>
+                        ISA Digital <br><small>Create your questioner or use a template</small>
+                    </h1>
+                    <br>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>
+                            Templates:
+                        </h3>
+                        <ul>
+                            {% for template in templates %}
+                                <li class="list-item">
+                                    <a href="/admin/isa_poll/questioner/{{ template.id }}/change/">{{ template }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>
+                            Finished questionnaires:
+                        </h3>
+                        <ul>
+                            {% for result in template_results %}
+                                <li class="list-item">
+                                    <a href="{% url 'isa_poll:poll complete' result.id %}">{{ result }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>
+                            Help section:
+                        </h3>
+                        <p>Here you can find a lot of interesting information about how to use templates or create new
+                            ones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,5 +1,5 @@
 """
-ASGI config for Digitale ESA project.
+ASGI config for Digital ISA project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

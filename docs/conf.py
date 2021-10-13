@@ -26,7 +26,7 @@ django.setup()
 
 # -- Project information -----------------------------------------------------
 
-project = "Digitale ESA"
+project = "Digital ISA"
 copyright = """2021, Mike Talalaevskiy"""
 author = "Mike Talalaevskiy"
 
